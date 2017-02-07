@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>Lala Fly DESKTOP</title>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" href="resources/css/login.css"/>
+        <link rel="stylesheet" href="resources/css/table.css"/>
+        <!-- Include CSS File Here -->
+        <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/js/login.js"></script>
+        <script type="text/javascript" src="scripts/js/reserva.js"></script>
+    </head>
+    <body>
+	<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+    <div class="container">
+        <div class="card card-container">
+            <img id="profile-img" class="profile-img-card" src="resources/img/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" id="inputName" class="form-control" placeholder="Username" required autofocus>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button id="sign-in" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+	<div class="container">
+		<div class="card card-table tbl-content">
+		<span class='tbl-header' id='reservas'></span>
+			<table cellpadding="0" cellspacing="0" border="0" id='tablaReservas'>
+			</table>
+			<div id='goPay'>
+				<button id="btnReservar" class="btn btn-primary btn-block">Reservar otro vuelo</button>
+			</div>
+		</div>
+	</div>
+    </body>
+</html>
